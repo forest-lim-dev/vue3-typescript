@@ -1,11 +1,30 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import NestedComponentView from '@/views/NestedComponentView.vue'
+import CommunicationView from '@/views/CommunicationView.vue'
+import CommunicationView2 from '@/views/CommunicationView2.vue'
+import CommunicationView3 from '@/views/CommunicationView3.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/nested',
+    name: 'nested',
+    component: NestedComponentView
+  },
+  {
+    path: '/communication',
+    name: 'communication',
+    component: CommunicationView
+  },
+  {
+    path: '/communication3',
+    name: 'communication3',
+    component: CommunicationView3
   },
   {
     path: '/about2',
